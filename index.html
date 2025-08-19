@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2YO Roll-Up Mockup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Simple simulation of a roll-up banner's dimensions and shadow */
+        .rollup-banner {
+            width: 320px; /* Standard mobile width for preview */
+            height: 720px; /* Taller aspect ratio */
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        @media (min-width: 640px) {
+            .rollup-banner {
+                width: 400px;
+                height: 900px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <!-- Roll-Up Banner Container -->
+    <div class="rollup-banner bg-gray-900 text-white rounded-2xl flex flex-col overflow-hidden">
+
+        <!-- Header Section -->
+        <header class="p-8 text-center bg-gray-800/50">
+            <div class="text-blue-400 font-bold text-lg tracking-widest">🎮 H2YO at Playtech</div>
+            <h1 class="text-4xl md:text-5xl font-black uppercase tracking-tighter mt-4 leading-none">
+                Smart Hydration.<br>
+                <span class="text-blue-400">Better Energy.</span><br>
+                Zero Crash.
+            </h1>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow p-6 md:p-8 flex flex-col justify-around">
+            
+            <!-- Benefits Section -->
+            <section>
+                <h2 class="text-2xl font-bold text-center text-blue-400 mb-6">⚡ Why H2YO?</h2>
+                <div class="space-y-5">
+                    <!-- Benefit 1: Focus -->
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-500/20 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">Steady Focus, No Jitters</h3>
+                            <p class="text-gray-400 text-sm">Micro-dosed caffeine + vitamins.</p>
+                        </div>
+                    </div>
+                    <!-- Benefit 2: No Sugar -->
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-500/20 p-3 rounded-full">
+                           <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" transform="rotate(90 12 12) scale(-1, 1)"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2 12h20" transform="rotate(45 12 12)"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">No Sugar Spikes, No Cravings</h3>
+                            <p class="text-gray-400 text-sm">NEOSWEET® natural sweetener.</p>
+                        </div>
+                    </div>
+                    <!-- Benefit 3: Personalization -->
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-blue-500/20 p-3 rounded-full">
+                            <svg class="w-6 h-6 text-blue-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 16v-2m8-8h2M4 12H2m15.364 6.364l1.414 1.414M4.222 4.222l1.414 1.414m12.728 0l-1.414 1.414M5.636 18.364l-1.414 1.414M12 18a6 6 0 100-12 6 6 0 000 12z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold">You Choose, You Personalize</h3>
+                            <p class="text-gray-400 text-sm">Energy, hydration, or recovery.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- YoCoins Section -->
+            <section class="bg-gray-800/50 rounded-xl p-4 mt-6">
+                <h2 class="text-2xl font-bold text-center text-blue-400 mb-4">💎 YoCoins: The Mobilly for Drinks</h2>
+                <div class="text-center text-gray-300 space-y-2 text-sm md:text-base">
+                    <p>Top up → tap for instant drinks.</p>
+                    <p>Get discounts on larger top-ups.</p>
+                    <p>Future rewards & team competitions coming soon!</p>
+                    <p>Help cut cans & plastic bottles.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer / Call to Action -->
+        <footer class="p-6 text-center bg-blue-600">
+            <h3 class="text-xl font-bold">🚀 Try it now</h3>
+            <p class="mt-1">Top-up. Mix your drink. Level up your energy.</p>
+            <div class="mt-4 bg-white p-2 inline-block rounded-lg">
+                <!-- Placeholder for QR Code -->
+                <div class="w-24 h-24 bg-gray-300 flex items-center justify-center text-black text-xs font-mono">
+                    QR CODE
+                </div>
+            </div>
+            <p class="mt-2 text-lg font-semibold tracking-wider">👉 Scan. Sip. Play longer.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
